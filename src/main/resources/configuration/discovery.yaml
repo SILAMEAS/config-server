@@ -1,5 +1,5 @@
 server:
-  port: 8761
+  port: ${PORT_DISCOVERY}
 
 spring:
   application:
@@ -8,7 +8,7 @@ spring:
 # Eureka server Config
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${HOSTNAME_EUREKA}
   client:
     register-with-eureka: false #because it eureka server no need to register itself
     fetch-registry: false       # no need to fetch registry

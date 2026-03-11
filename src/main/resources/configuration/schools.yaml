@@ -3,9 +3,9 @@ spring:
     name: schools
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/schools
-    username: admin
-    password: 123
+    url: jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_SCHOOL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -13,18 +13,18 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 server:
-  port: 8070
+  port: ${PORT_SCHOOL}
 
 
 # Eureka client Config
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${HOSTNAME_EUREKA}
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: ${URI_EUREKA_SERVER_URL}
 
 
 application:
   config:
-    students-url: http://localhost:8090/api/v1/students  #student-service url
+    students-url: ${URI_FEIGN_STUDENT}  #student-service url
