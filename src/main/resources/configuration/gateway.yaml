@@ -22,3 +22,11 @@ spring:
           predicates:
             - Path=/api/v1/schools/**
 
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+  zipkin:
+    tracing:
+      endpoint: ${URI_ZIPKIN_SERVER}
