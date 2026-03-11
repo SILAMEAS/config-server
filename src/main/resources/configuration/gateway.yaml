@@ -27,6 +27,6 @@ management:
     sampling:
       probability: 1.0
 
-  zipkin:
-    tracing:
-      endpoint: ${URI_ZIPKIN_SERVER}
+#  zipkin:
+#    tracing:
+#      endpoint: ${URI_ZIPKIN_SERVER}
