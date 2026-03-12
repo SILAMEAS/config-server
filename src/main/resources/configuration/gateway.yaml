@@ -22,7 +22,10 @@ spring:
           uri: ${URI_SCHOOL}
           predicates:
             - Path=/api/v1/schools/**
-
+        - id: customer-service
+          uri: ${URI_CUSTOMER}
+          predicates:
+            - Path=/api/v1/customer/**
 # tracing log with zipkin
 management:
   tracing:
