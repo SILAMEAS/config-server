@@ -16,7 +16,7 @@ server:
   port: ${PORT_SCHOOL}
 
 
-# Eureka client Config
+# eureka register
 eureka:
   instance:
     hostname: ${HOSTNAME_EUREKA}
@@ -28,3 +28,10 @@ eureka:
 application:
   config:
     students-url: ${URI_FEIGN_STUDENT}  #student-service url
+
+
+# tracing log with zipkin
+management:
+  tracing:
+    sampling:
+      probability: 1.0
