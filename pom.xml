@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.LACY</groupId>
-	<artifactId>config-server</artifactId>
+	<artifactId>server-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>config-server</name>
+	<name>server-config</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

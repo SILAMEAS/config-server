@@ -1,1 +1,1 @@
-# micro-config-server
+# micro-server-config
